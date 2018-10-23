@@ -2,8 +2,8 @@
 function fibonacci(n) {
 
   if (n < 0 || n === null || n === undefined)
-    //return null;
-    return 20;
+    return null;
+    
 
   if(n == 0)
     return 0;
