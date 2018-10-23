@@ -29,7 +29,7 @@ if(process.env.DB_HOST) {
 app.get('/fibonacci/:n' , function(req,res){
 
   // high cpu usage function
-  // var value = AdvancedMaths.fibonacci(req.params.n);
+  var value = AdvancedMaths.fibonacci(req.params.n);
 
   res.render("fibonacci" , {index:req.params.n, value:value});
 });
